@@ -14,13 +14,13 @@ public abstract class AbstractChaoticSystem {
     //</editor-fold>
     
     //<editor-fold defaultstate="collapsed" desc="Abstract methods">
-    abstract void Evolve(int factor);
-    abstract byte[] Key(int requiredLength);
-    abstract void Reset();
-    abstract AbstractChaoticSystem Clone();
-    abstract String Serialize();
-    abstract void Deserialize(String serialization);
-    abstract void Generate(int keyLength) throws Exception;
+    public abstract void Evolve(int factor);
+    public abstract byte[] Key(int requiredLength);
+    public abstract void Reset();
+    public abstract AbstractChaoticSystem Clone();
+    public abstract String Serialize();
+    public abstract void Deserialize(String serialization);
+    public abstract void Generate(int keyLength) throws Exception;
     //</editor-fold>
     
     //<editor-fold defaultstate="collapsed" desc="Constructors">
