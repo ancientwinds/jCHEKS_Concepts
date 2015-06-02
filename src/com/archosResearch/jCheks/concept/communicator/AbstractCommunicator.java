@@ -12,6 +12,6 @@ package com.archosResearch.jCheks.concept.communicator;
 public abstract class AbstractCommunicator{
     //TODO eventually move this class into the Conceps project
     //TODO do not use the Java Observable mechanism, build our own instead so it will be tailored to our needs.     
-    public abstract void sendCommunication(Communication aCommunication);
+    public abstract void sendCommunication(AbstractCommunication communication);
     
 }
