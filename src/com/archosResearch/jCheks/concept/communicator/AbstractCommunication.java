@@ -9,6 +9,7 @@ package com.archosResearch.jCheks.concept.communicator;
  *
  * @author Thomas Lepage thomas.lepage@hotmail.ca
  */
-public class AbstractCommunication {
-    
+public abstract class AbstractCommunication {
+        public abstract String getCommunicationString();
+
 }
