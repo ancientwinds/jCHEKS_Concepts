@@ -12,30 +12,29 @@ package com.archosResearch.jCheks.concept.communicator;
 public abstract class AbstractCommunication {
     
     protected String systemId;
-    protected String chipher;
-    protected String chiperCheck;
+    protected String cipher;
+    //TODO Cipher rename
+    protected String cipherCheck;
     
     public abstract String getCommunicationString();
     
     public AbstractCommunication(){}
-    
-    public AbstractCommunication(String aChipher, String aChipherCheck, String aSystemId){
-        this.chipher = aChipher;
-        this.chiperCheck = aChipherCheck;
-        this.systemId = aSystemId;
+    //TODO remove aC
+    public AbstractCommunication(String cipher, String cipherCheck, String systemId){
+        this.cipher = cipher;
+        this.cipherCheck = cipherCheck;
+        this.systemId = systemId;
     }
     
-    public String getSystemId() {
-        
+    public String getSystemId() {        
         return this.systemId;
     }
     
-    public String getChipher() {
-        return this.chipher;
+    public String getCipher() {
+        return this.cipher;
     }
     
-    public String getChipherCheck()
-    {
-        return this.chiperCheck;
+    public String getCipherCheck() {
+        return this.cipherCheck;
     }
 }

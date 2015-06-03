@@ -11,4 +11,8 @@ package com.archosResearch.jCheks.concept.communicator;
  */
 public class CommunicatorException extends Exception{
     
+    public CommunicatorException()
+    {
+       
+    }
 }

@@ -13,6 +13,8 @@ import java.util.List;
  *
  * @author Thomas Lepage thomas.lepage@hotmail.ca
  */
+
+//TODO extends AbstractObservable
 public class CommunicatorObservable {
     private final List<CommunicatorObserver> observers = new ArrayList<>();
     
