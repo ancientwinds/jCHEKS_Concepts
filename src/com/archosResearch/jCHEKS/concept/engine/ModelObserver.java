@@ -1,7 +1,6 @@
 package com.archosResearch.jCHEKS.concept.engine;
 
-import com.archosResearch.jCHEKS.concept.engine.message.IncomingMessage;
-import com.archosResearch.jCHEKS.concept.engine.message.OutgoingMessage;
+import com.archosResearch.jCHEKS.concept.engine.message.*;
 
 /**
  *

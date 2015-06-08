@@ -1,14 +1,11 @@
 package com.archosResearch.jCHEKS.concept.ioManager;
 
-import com.archosResearch.jCHEKS.concept.engine.AbstractEngine;
-import com.archosResearch.jCHEKS.concept.engine.ModelObserver;
+import com.archosResearch.jCHEKS.concept.engine.*;
 
 /**
  *
  * @author Michael Roussel <rousselm4@gmail.com>
  */
-
-//Todo In concept project?
 public interface InputOutputManager extends ModelObserver {
 
     public void setEngine(AbstractEngine engine);

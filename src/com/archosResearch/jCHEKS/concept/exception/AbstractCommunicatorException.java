@@ -1,24 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.archosResearch.jCHEKS.concept.exception;
 
 /**
  *
  * @author Thomas Lepage thomas.lepage@hotmail.ca
  */
-public class AbstractCommunicatorException extends AbstractException{
+public class AbstractCommunicatorException extends AbstractException {
 
     public AbstractCommunicatorException(String message) {
         super(message);
     }
-    
+
     public AbstractCommunicatorException(String message, Throwable throwable) {
         super(message, throwable);
     }
-    
-    
-    
+
 }

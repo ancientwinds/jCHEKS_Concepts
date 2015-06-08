@@ -16,5 +16,4 @@ public abstract class AbstractMessage {
         return this.content;
     }
     
-    //public ... polymorphicMethod(){}
 }
