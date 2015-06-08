@@ -1,4 +1,4 @@
-package com.archosResearch.jCheks.concept.ioManager;
+package com.archosResearch.jCHEKS.concept.ioManager;
 
 import com.archosResearch.jCHEKS.concept.engine.AbstractEngine;
 import com.archosResearch.jCHEKS.concept.engine.ModelObserver;

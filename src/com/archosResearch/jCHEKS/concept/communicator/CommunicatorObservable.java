@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.archosResearch.jCheks.concept.communicator;
+package com.archosResearch.jCHEKS.concept.communicator;
 
-import com.archosResearch.jCheks.concept.communicator.AbstractCommunication;
+import com.archosResearch.jCHEKS.concept.communicator.AbstractCommunication;
 import java.util.ArrayList;
 import java.util.List;
 
