@@ -20,6 +20,12 @@ public abstract class ModelObservable  /*extends AbstractObservable*/{
         this.observers.remove(observer);
     }
     
+    public void notifyContactAdded(String contactName) {
+        for (ModelObserver observer : this.observers) {
+            observer.contactAdded(contactName);
+        }
+    }
+    
     public void notifyMessageSent(OutgoingMessage message, String contactName) {
         for (ModelObserver observer : this.observers) {
             observer.messageSent(message, contactName);
