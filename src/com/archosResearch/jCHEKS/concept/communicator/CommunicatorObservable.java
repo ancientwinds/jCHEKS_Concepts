@@ -7,15 +7,22 @@ package com.archosResearch.jCHEKS.concept.communicator;
 
 public class CommunicatorObservable extends AbstractObservable<CommunicatorObserver>{
     
-    public void notifyCommunicationReceived(AbstractCommunication communication){
-        for(CommunicatorObserver observer: this.observers){
+    public String notifyCommunicationReceived(AbstractCommunication communication){
+        /*for(CommunicatorObserver observer: this.observers){
             observer.communicationReceived(communication);
-        }
+        }*/
+        return this.observers.iterator().next().communicationReceived(communication);
     }
     
     public void notifyAckReceived(){
         for(CommunicatorObserver observer: this.observers){
             observer.ackReceived();
+        }
+    }
+    
+    public void notifySecureAckReceived() {
+        for(CommunicatorObserver observer: this.observers){
+            observer.secureAckReceived();
         }
     }
 }
