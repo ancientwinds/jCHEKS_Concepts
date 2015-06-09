@@ -6,5 +6,5 @@ package com.archosResearch.jCHEKS.concept.communicator;
  */
 public interface CommunicatorObserver {
     public void ackReceived();
-    public void communicationReceived(AbstractCommunication communication);
+    public String communicationReceived(AbstractCommunication communication);
 }
