@@ -19,4 +19,10 @@ public class CommunicatorObservable extends AbstractObservable<CommunicatorObser
             observer.ackReceived();
         }
     }
+    
+    public void notifySecureAckReceived() {
+        for(CommunicatorObserver observer: this.observers){
+            observer.secureAckReceived();
+        }
+    }
 }
