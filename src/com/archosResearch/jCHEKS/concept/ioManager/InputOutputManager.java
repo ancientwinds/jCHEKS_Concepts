@@ -10,5 +10,5 @@ public interface InputOutputManager extends ModelObserver {
 
     public void setEngine(AbstractEngine engine);
 
-    public void forwardOutgoingMessage(String messageContent);
+    public void forwardOutgoingMessage(String messageContent, String contactName);
 }
