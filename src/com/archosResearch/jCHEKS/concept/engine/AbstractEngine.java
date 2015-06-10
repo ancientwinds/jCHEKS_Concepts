@@ -6,6 +6,6 @@ package com.archosResearch.jCHEKS.concept.engine;
  */    
 public abstract class AbstractEngine{
     public abstract void handleOutgoingMessage(String content, String contactName);
-    public abstract void createContact(String contactName, String remoteIp, int sendingPort);
+    public abstract void createContact(String contactName, String remoteIp, int sendingPort, String uniqueId);
     public abstract void setReceivingPort(int port);
 }
