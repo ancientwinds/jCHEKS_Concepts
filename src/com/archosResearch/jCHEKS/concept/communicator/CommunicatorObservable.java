@@ -11,6 +11,7 @@ public class CommunicatorObservable extends AbstractObservable<CommunicatorObser
         /*for(CommunicatorObserver observer: this.observers){
             observer.communicationReceived(communication);
         }*/
+        //TODO Only one observer.
         return this.observers.iterator().next().communicationReceived(communication);
     }
     

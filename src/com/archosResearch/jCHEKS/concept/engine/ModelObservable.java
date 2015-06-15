@@ -9,10 +9,6 @@ import com.archosResearch.jCHEKS.concept.engine.message.*;
  * @author Michael Roussel <rousselm4@gmail.com>
  */
 public abstract class ModelObservable  extends AbstractObservable<ModelObserver>{
-
-    public void removeObserver(ModelObserver observer) {
-        this.observers.remove(observer);
-    }
     
     public void notifyContactAdded(String contactName) {
         for (ModelObserver observer : this.observers) {
