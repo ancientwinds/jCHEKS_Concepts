@@ -8,6 +8,6 @@ import com.archosResearch.jCHEKS.concept.chaoticSystem.AbstractChaoticSystem;
  */
 public abstract class AbstractEncrypter {
 
-    public abstract byte[] encrypt(byte[] text, AbstractChaoticSystem chaoticSystem);
-    public abstract byte[] decrypt(byte[] text, AbstractChaoticSystem chaoticSystem);
+    public abstract String encrypt(String text, AbstractChaoticSystem chaoticSystem);
+    public abstract String decrypt(String text, AbstractChaoticSystem chaoticSystem);
 }
