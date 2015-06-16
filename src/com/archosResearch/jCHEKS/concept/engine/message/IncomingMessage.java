@@ -6,8 +6,13 @@ package com.archosResearch.jCHEKS.concept.engine.message;
  */
 public class IncomingMessage extends AbstractMessage {
 
-    public IncomingMessage(String content /*, EState state */) {
+    public IncomingMessage(String content) {
         super(content);
+    }
+
+    @Override
+    public State getState() {
+        return AbstractMessage.State.FOR_ME;
     }
 
 }
