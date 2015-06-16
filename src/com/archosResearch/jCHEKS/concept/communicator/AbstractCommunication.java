@@ -7,14 +7,14 @@ package com.archosResearch.jCHEKS.concept.communicator;
 public abstract class AbstractCommunication {
     
     protected String systemId;
-    protected byte[] cipher;
+    protected String cipher;
     protected String cipherCheck;
     
     public abstract String getCommunicationString();
     
     public AbstractCommunication(){}
     
-    public AbstractCommunication(byte[] cipher, String cipherCheck, String systemId){
+    public AbstractCommunication(String cipher, String cipherCheck, String systemId){
         this.cipher = cipher;
         this.cipherCheck = cipherCheck;
         this.systemId = systemId;
@@ -24,7 +24,7 @@ public abstract class AbstractCommunication {
         return this.systemId;
     }
     
-    public byte[] getCipher() {
+    public String getCipher() {
         return this.cipher;
     }
     
