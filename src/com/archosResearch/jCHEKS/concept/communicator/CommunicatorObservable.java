@@ -17,11 +17,11 @@ public class CommunicatorObservable {
         return this.observer.communicationReceived(communication);
     }
     
-    public void notifyAckReceived(){
-        this.observer.ackReceived();
+    public void notifyAckReceived(AbstractCommunication communication){
+        this.observer.ackReceived(communication);
     }
     
-    public void notifySecureAckReceived() {
-        this.observer.secureAckReceived();
+    public void notifySecureAckReceived(AbstractCommunication communication) {
+        this.observer.secureAckReceived(communication);
     }
 }
