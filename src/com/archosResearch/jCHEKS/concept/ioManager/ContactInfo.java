@@ -8,7 +8,7 @@ public class ContactInfo {
     private final String ip;
     private final int port;
     private final String name;
-    private final String uniqueId;
+    private String uniqueId;
     
     public ContactInfo(String ip, int port, String name, String uniqueId){
         this.ip = ip;
@@ -32,5 +32,15 @@ public class ContactInfo {
     public String getUniqueId() {
         return uniqueId;
     }
+
+    public void generateUniqueId(String currentIp) {
+        if(currentIp.hashCode() > this.ip.hashCode()){
+            this.uniqueId = this.ip + currentIp;
+        } else{
+            this.uniqueId = currentIp + this.ip;
+        }    
+    }
+    
+        
     
 }
