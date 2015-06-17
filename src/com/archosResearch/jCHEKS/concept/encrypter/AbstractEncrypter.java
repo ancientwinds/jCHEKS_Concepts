@@ -1,6 +1,7 @@
 package com.archosResearch.jCHEKS.concept.encrypter;
 
 import com.archosResearch.jCHEKS.concept.chaoticSystem.AbstractChaoticSystem;
+import com.archosResearch.jCHEKS.concept.exception.EncrypterException;
 
 /**
  *
@@ -8,6 +9,6 @@ import com.archosResearch.jCHEKS.concept.chaoticSystem.AbstractChaoticSystem;
  */
 public abstract class AbstractEncrypter {
 
-    public abstract String encrypt(String text, AbstractChaoticSystem chaoticSystem);
-    public abstract String decrypt(String text, AbstractChaoticSystem chaoticSystem);
+    public abstract String encrypt(String text, AbstractChaoticSystem chaoticSystem) throws EncrypterException;
+    public abstract String decrypt(String text, AbstractChaoticSystem chaoticSystem) throws EncrypterException;
 }
