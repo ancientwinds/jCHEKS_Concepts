@@ -4,13 +4,13 @@ package com.archosResearch.jCHEKS.concept.exception;
  *
  * @author Michael Roussel rousselm4@gmail.com
  */
-public class AbstractEngineException extends AbstractCHEKSException{
+public class EngineException extends AbstractCHEKSException{
 
-    public AbstractEngineException(String message) {
+    public EngineException(String message) {
         super(message);
     }
     
-    public AbstractEngineException(String message, Throwable throwable) {
+    public EngineException(String message, Throwable throwable) {
         super(message, throwable);
     }
       
