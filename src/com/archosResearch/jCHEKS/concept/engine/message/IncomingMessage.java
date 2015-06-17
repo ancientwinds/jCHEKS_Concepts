@@ -8,11 +8,7 @@ public class IncomingMessage extends AbstractMessage {
 
     public IncomingMessage(String content) {
         super(content);
-    }
-
-    @Override
-    public State getState() {
-        return AbstractMessage.State.FOR_ME;
+        state = AbstractMessage.State.FOR_ME;
     }
 
 }

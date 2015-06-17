@@ -4,8 +4,8 @@ import com.archosResearch.jCHEKS.concept.ioManager.ContactInfo;
 
 /**
  *
- * @author Thomas Lepage thomas.lepage@hotmail.ca & Michael Roussel
- * <rousselm4@gmail.com>
+ * @author Thomas Lepage thomas.lepage@hotmail.ca
+ * @author Michael Roussel <rousselm4@gmail.com>
  */
 public abstract class AbstractEngine {
 

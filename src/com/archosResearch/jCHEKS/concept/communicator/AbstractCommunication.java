@@ -12,9 +12,6 @@ public abstract class AbstractCommunication {
 
     public abstract String getCommunicationString();
 
-    public AbstractCommunication() {
-    }
-
     public AbstractCommunication(String cipher, String cipherCheck, String systemId) {
         this.cipher = cipher;
         this.cipherCheck = cipherCheck;

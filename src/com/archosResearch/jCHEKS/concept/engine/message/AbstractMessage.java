@@ -7,6 +7,7 @@ package com.archosResearch.jCHEKS.concept.engine.message;
 public abstract class AbstractMessage {
 
     private String content;
+    protected State state;
 
     public static enum State {
 
@@ -25,6 +26,8 @@ public abstract class AbstractMessage {
         return this.content;
     }
 
-    abstract public State getState();
+    public State getState() {
+        return state;
+    }
 
 }
