@@ -1,6 +1,5 @@
 package com.archosResearch.jCHEKS.concept.communicator;
 
-
 import java.util.HashSet;
 import java.util.Set;
 
@@ -10,13 +9,14 @@ import java.util.Set;
  * @param <T>
  */
 public abstract class AbstractObservable<T> {
+
     protected final Set<T> observers = new HashSet<>();
-    
-    public void addObserver(T observer){
+
+    public void addObserver(T observer) {
         this.observers.add(observer);
     }
-    
+
     /*public void removeObserver(T observer) {
-        this.observers.remove(observer);
-    }*/
+     this.observers.remove(observer);
+     }*/
 }

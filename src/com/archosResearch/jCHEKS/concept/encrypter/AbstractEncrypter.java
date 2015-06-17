@@ -10,5 +10,6 @@ import com.archosResearch.jCHEKS.concept.exception.EncrypterException;
 public abstract class AbstractEncrypter {
 
     public abstract String encrypt(String text, AbstractChaoticSystem chaoticSystem) throws EncrypterException;
+
     public abstract String decrypt(String text, AbstractChaoticSystem chaoticSystem) throws EncrypterException;
 }
