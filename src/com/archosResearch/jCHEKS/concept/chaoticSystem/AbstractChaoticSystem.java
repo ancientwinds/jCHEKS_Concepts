@@ -25,11 +25,14 @@ public abstract class AbstractChaoticSystem {
 
     public abstract String Serialize();
 
+    //TODO shouldn't this method be a static factory ?
     public abstract void Deserialize(String serialization);
 
     public abstract void Generate(int keyLength) throws Exception;
     //</editor-fold>
 
+    //TODO we should probably have a constructor with parameters (id and keylenght)
+    
     //<editor-fold defaultstate="collapsed" desc="Constructors">
     public AbstractChaoticSystem() {
         this.systemId = java.util.UUID.randomUUID().toString();
