@@ -17,17 +17,17 @@ public abstract class AbstractChaoticSystem {
     //<editor-fold defaultstate="collapsed" desc="Abstract methods">
     public abstract void Evolve(int factor);
 
-    public abstract byte[] Key(int requiredLength);
+    public abstract byte[] Key(int requiredLength) throws Exception;
 
     public abstract void Reset();
 
-    public abstract AbstractChaoticSystem Clone();
+    public abstract AbstractChaoticSystem Clone() throws Exception;
 
     public abstract String Serialize();
 
     public abstract void Deserialize(String serialization);
 
-    public abstract void Generate(int keyLength) throws Exception;
+    protected abstract void Generate(int keyLength) throws Exception;
     //</editor-fold>
 
     //<editor-fold defaultstate="collapsed" desc="Constructors">
@@ -36,9 +36,10 @@ public abstract class AbstractChaoticSystem {
         this.keyLength = 128;
     }*/
     
-    public AbstractChaoticSystem(String uniqueId, int keyLength) {
+    public AbstractChaoticSystem(String uniqueId, int keyLength) throws Exception {
         this.systemId = uniqueId;
         this.keyLength = keyLength;
+        this.Generate(keyLength);
     }
     //</editor-fold>
 
