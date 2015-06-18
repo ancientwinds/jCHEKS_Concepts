@@ -31,10 +31,10 @@ public abstract class AbstractChaoticSystem {
     //</editor-fold>
 
     //<editor-fold defaultstate="collapsed" desc="Constructors">
-    public AbstractChaoticSystem() {
+    /*public AbstractChaoticSystem() {
         this.systemId = java.util.UUID.randomUUID().toString();
         this.keyLength = 128;
-    }
+    }*/
     
     public AbstractChaoticSystem(String uniqueId, int keyLength) {
         this.systemId = uniqueId;
