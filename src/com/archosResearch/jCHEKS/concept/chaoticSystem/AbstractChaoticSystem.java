@@ -15,19 +15,19 @@ public abstract class AbstractChaoticSystem {
     //</editor-fold>
 
     //<editor-fold defaultstate="collapsed" desc="Abstract methods">
-    public abstract void Evolve(int factor);
+    public abstract void evolveSystem(int factor);
 
-    public abstract byte[] Key(int requiredLength) throws Exception;
+    public abstract byte[] getKey(int requiredLength) throws Exception;
 
-    public abstract void Reset();
+    public abstract void resetSystem();
 
-    public abstract AbstractChaoticSystem Clone() throws Exception;
+    public abstract AbstractChaoticSystem cloneSystem() throws Exception;
 
     public abstract String Serialize();
 
     public abstract void Deserialize(String serialization);
 
-    protected abstract void Generate(int keyLength) throws Exception;
+    protected abstract void generateSystem(int keyLength) throws Exception;
     //</editor-fold>
 
     //<editor-fold defaultstate="collapsed" desc="Constructors">
@@ -39,21 +39,21 @@ public abstract class AbstractChaoticSystem {
     public AbstractChaoticSystem(String uniqueId, int keyLength) throws Exception {
         this.systemId = uniqueId;
         this.keyLength = keyLength;
-        this.Generate(keyLength);
+        this.generateSystem(keyLength);
     }
     //</editor-fold>
 
     //<editor-fold defaultstate="collapsed" desc="Methods">
-    public byte[] Key() {
+    public byte[] getKey() {
         return this.lastGeneratedKey;
     }
 
-    public byte[] IV() {
+    public byte[] getIV() {
         return this.lastGeneratedIV;
     }
 
-    public void Evolve() {
-        this.Evolve(0);
+    public void evolveSystem() {
+        this.evolveSystem(0);
     }
     //</editor-fold>
 
