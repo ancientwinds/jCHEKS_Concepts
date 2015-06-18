@@ -41,5 +41,5 @@ public class ContactInfo {
             this.uniqueId = currentIp + this.ip;
         }
     }
-
+ 
 }
