@@ -11,4 +11,7 @@ public interface CommunicatorObserver {
     public void secureAckReceived(AbstractCommunication communication);
 
     public String communicationReceived(AbstractCommunication communication);
+    public void failToReceiveAck(AbstractCommunication communication);
+    public void failToReceiveSecureAck(AbstractCommunication communication);
+    public void timeOutReached(AbstractCommunication communication);
 }

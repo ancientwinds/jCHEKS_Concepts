@@ -23,4 +23,16 @@ public class CommunicatorObservable {
     public void notifySecureAckReceived(AbstractCommunication communication) {
         this.observer.secureAckReceived(communication);
     }
+    
+    public void notifyFailToReceiveAck(AbstractCommunication communication) {
+        this.observer.failToReceiveAck(communication);
+    }
+    
+    public void notifyFailToReceiveSecureAck(AbstractCommunication communication) {
+        this.observer.failToReceiveSecureAck(communication);
+    }
+    
+    public void notifyTimeOutReached(AbstractCommunication communication) {
+        this.observer.timeOutReached(communication);
+    }
 }
