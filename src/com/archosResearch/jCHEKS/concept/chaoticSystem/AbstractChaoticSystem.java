@@ -35,6 +35,11 @@ public abstract class AbstractChaoticSystem {
         this.systemId = java.util.UUID.randomUUID().toString();
         this.keyLength = 128;
     }
+    
+    public AbstractChaoticSystem(String uniqueId, int keyLength) {
+        this.systemId = uniqueId;
+        this.keyLength = keyLength;
+    }
     //</editor-fold>
 
     //<editor-fold defaultstate="collapsed" desc="Methods">
