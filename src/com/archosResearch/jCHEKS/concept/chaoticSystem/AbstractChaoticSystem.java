@@ -1,5 +1,7 @@
 package com.archosResearch.jCHEKS.concept.chaoticSystem;
 
+import java.util.HashMap;
+
 /**
  *
  * @author jean-francois
@@ -39,7 +41,6 @@ public abstract class AbstractChaoticSystem {
     public AbstractChaoticSystem(String uniqueId, int keyLength) throws Exception {
         this.systemId = uniqueId;
         this.keyLength = keyLength;
-        this.generateSystem(keyLength);
     }
     //</editor-fold>
 
@@ -56,7 +57,7 @@ public abstract class AbstractChaoticSystem {
         this.evolveSystem(0);
     }
     //</editor-fold>
-
+    
     //<editor-fold defaultstate="collapsed" desc="Accessors">
     public String getSystemId() {
         return this.systemId;
