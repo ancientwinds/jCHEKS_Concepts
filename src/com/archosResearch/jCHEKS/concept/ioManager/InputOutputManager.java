@@ -12,7 +12,5 @@ public interface InputOutputManager extends ModelObserver {
 
     public void forwardOutgoingMessage(String messageContent, String contactName);
 
-    public void log(String logMessage, String id);
-
     public void refresh();
 }
