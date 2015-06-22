@@ -10,16 +10,14 @@ public class ContactInfo {
     private final int port;
     private final String name;
     private String uniqueId;
-    private final String receivingChaoticSystem;
-    private final String sendingChaoticSystem;
+    private String receivingChaoticSystem;
+    private String sendingChaoticSystem;
 
-    public ContactInfo(String ip, int port, String name, String uniqueId, String receivingChaoticSystem, String sendingChaoticSystem) {
+    public ContactInfo(String ip, int port, String name, String uniqueId) {
         this.ip = ip;
         this.port = port;
         this.name = name;
         this.uniqueId = uniqueId;
-        this.receivingChaoticSystem = receivingChaoticSystem;
-        this.sendingChaoticSystem = sendingChaoticSystem;
     }
 
     public String getIp() {
@@ -44,6 +42,11 @@ public class ContactInfo {
         } else {
             this.uniqueId = currentIp + this.ip;
         }
+    }
+    
+    public void generateChaoticSystemName(String contactName) {
+        this.receivingChaoticSystem = contactName + "-" + this.name;
+        this.sendingChaoticSystem = this.name + "-" + contactName;
     }
     
     public String getReceivingChaoticSystem() {
