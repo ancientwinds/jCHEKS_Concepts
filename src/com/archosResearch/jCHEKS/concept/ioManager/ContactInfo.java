@@ -45,8 +45,8 @@ public class ContactInfo {
     }
     
     public void generateChaoticSystemName(String contactName) {
-        this.receivingChaoticSystem = contactName + "-" + this.name;
-        this.sendingChaoticSystem = this.name + "-" + contactName;
+        this.receivingChaoticSystem = contactName + "-" + this.name + ".xml";
+        this.sendingChaoticSystem = this.name + "-" + contactName + ".xml";
     }
     
     public String getReceivingChaoticSystem() {
