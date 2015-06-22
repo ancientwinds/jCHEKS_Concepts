@@ -38,8 +38,8 @@ public abstract class AbstractChaoticSystem {
         this.keyLength = 128;
     }*/
     
-    public AbstractChaoticSystem(String uniqueId, int keyLength) throws Exception {
-        this.systemId = uniqueId;
+    public AbstractChaoticSystem(int keyLength) throws Exception {
+        this.systemId = java.util.UUID.randomUUID().toString();
         this.keyLength = keyLength;
     }
     //</editor-fold>
