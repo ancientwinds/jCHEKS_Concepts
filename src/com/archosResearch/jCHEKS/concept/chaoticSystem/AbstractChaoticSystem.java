@@ -1,7 +1,5 @@
 package com.archosResearch.jCHEKS.concept.chaoticSystem;
 
-import java.util.HashMap;
-
 /**
  *
  * @author jean-francois
@@ -13,7 +11,6 @@ public abstract class AbstractChaoticSystem {
     protected int keyLength;
     protected final int maxImpact = 32;
     protected byte[] lastGeneratedKey;
-    protected byte[] lastGeneratedIV;
     //</editor-fold>
 
     //<editor-fold defaultstate="collapsed" desc="Abstract methods">
@@ -25,7 +22,7 @@ public abstract class AbstractChaoticSystem {
 
     public abstract AbstractChaoticSystem cloneSystem() throws Exception;
 
-    public abstract String Serialize();
+    public abstract String serialize();
 
     //TODO shouldn't this method be a static factory ?
     public abstract void Deserialize(String serialization);
@@ -50,10 +47,6 @@ public abstract class AbstractChaoticSystem {
     //<editor-fold defaultstate="collapsed" desc="Methods">
     public byte[] getKey() {
         return this.lastGeneratedKey;
-    }
-
-    public byte[] getIV() {
-        return this.lastGeneratedIV;
     }
 
     public void evolveSystem() {
