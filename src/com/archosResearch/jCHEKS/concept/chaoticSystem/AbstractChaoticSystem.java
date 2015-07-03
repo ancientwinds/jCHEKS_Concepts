@@ -1,5 +1,7 @@
 package com.archosResearch.jCHEKS.concept.chaoticSystem;
 
+import com.archosResearch.jCHEKS.concept.exception.ChaoticSystemException;
+
 /**
  *
  * @author jean-francois
@@ -16,18 +18,18 @@ public abstract class AbstractChaoticSystem {
     //<editor-fold defaultstate="collapsed" desc="Abstract methods">
     public abstract void evolveSystem(int factor);
 
-    public abstract byte[] getKey(int requiredLength) throws Exception;
+    public abstract byte[] getKey(int requiredLength)  throws ChaoticSystemException;
 
     public abstract void resetSystem();
 
-    public abstract AbstractChaoticSystem cloneSystem() throws Exception;
+    public abstract AbstractChaoticSystem cloneSystem()  throws ChaoticSystemException;
 
     public abstract String serialize();
 
     //TODO shouldn't this method be a static factory ?
     public abstract void Deserialize(String serialization);
 
-    protected abstract void generateSystem(int keyLength) throws Exception;
+    protected abstract void generateSystem(int keyLength) throws ChaoticSystemException;
     //</editor-fold>
 
     //TODO we should probably have a constructor with parameters (id and keylenght)
@@ -38,7 +40,7 @@ public abstract class AbstractChaoticSystem {
         this.keyLength = 128;
     }*/
     
-    public AbstractChaoticSystem(int keyLength) throws Exception {
+    public AbstractChaoticSystem(int keyLength){
         this.systemId = java.util.UUID.randomUUID().toString();
         this.keyLength = keyLength;
     }
