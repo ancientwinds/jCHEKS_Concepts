@@ -39,7 +39,11 @@ public abstract class AbstractChaoticSystem {
     }*/
     
     public AbstractChaoticSystem(int keyLength) throws Exception {
-        this.systemId = java.util.UUID.randomUUID().toString();
+        this(keyLength, java.util.UUID.randomUUID().toString());
+    }
+    
+    public AbstractChaoticSystem(int keyLength, String systemId) throws Exception {
+        this.systemId = systemId;
         this.keyLength = keyLength;
     }
     //</editor-fold>
@@ -52,6 +56,7 @@ public abstract class AbstractChaoticSystem {
     public void evolveSystem() {
         this.evolveSystem(0);
     }
+    
     //</editor-fold>
     
     //<editor-fold defaultstate="collapsed" desc="Accessors">
