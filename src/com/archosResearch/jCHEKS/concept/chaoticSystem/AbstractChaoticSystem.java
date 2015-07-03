@@ -29,8 +29,6 @@ public abstract class AbstractChaoticSystem {
 
     protected abstract void generateSystem(int keyLength) throws Exception;
     //</editor-fold>
-
-    //TODO we should probably have a constructor with parameters (id and keylenght)
     
     //<editor-fold defaultstate="collapsed" desc="Constructors">
     /*public AbstractChaoticSystem() {
