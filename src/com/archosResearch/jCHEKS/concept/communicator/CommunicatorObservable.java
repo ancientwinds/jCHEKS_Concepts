@@ -20,8 +20,8 @@ public class CommunicatorObservable {
         this.observer.ackReceived(communication);
     }
 
-    public void notifySecureAckReceived(AbstractCommunication communication) {
-        this.observer.secureAckReceived(communication);
+    public void notifySecureAckReceived(AbstractCommunication communication, String secureAck) {
+        this.observer.secureAckReceived(communication, secureAck);
     }
     
     public void notifyFailToReceiveAck(AbstractCommunication communication) {

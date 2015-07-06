@@ -8,7 +8,9 @@ import com.archosResearch.jCHEKS.concept.exception.EncrypterException;
  */
 public abstract class AbstractEncrypter {
 
-    public abstract String encrypt(String text, byte[] key, byte[] iv) throws EncrypterException;
+    public abstract String encrypt(String text, byte[] key) throws EncrypterException;
 
-    public abstract String decrypt(String text, byte[] key, byte[] iv) throws EncrypterException;
+    public abstract String decrypt(String text, byte[] key) throws EncrypterException;
+    
+    public abstract int bytesNeeded();
 }
