@@ -1,5 +1,7 @@
 package com.archosResearch.jCHEKS.concept.communicator;
 
+import com.archosResearch.jCHEKS.concept.exception.CommunicatorException;
+
 /**
  *
  * @author Thomas Lepage thomas.lepage@hotmail.ca
@@ -34,5 +36,9 @@ public class CommunicatorObservable {
     
     public void notifyTimeOutReached(AbstractCommunication communication) {
         this.observer.timeOutReached(communication);
+    }
+    
+    public void notifyExceptionThrown(CommunicatorException ex, AbstractCommunication communication) {
+        this.observer.exceptionThrown(ex, communication);
     }
 }
