@@ -12,5 +12,5 @@ public abstract class AbstractEncrypter {
 
     public abstract String decrypt(String text, byte[] key) throws EncrypterException;
     
-    public abstract int bytesNeeded();
+    public abstract int getByteNeeded();
 }
