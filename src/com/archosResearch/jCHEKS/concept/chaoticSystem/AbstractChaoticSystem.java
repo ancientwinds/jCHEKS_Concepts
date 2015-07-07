@@ -25,17 +25,13 @@ public abstract class AbstractChaoticSystem {
     public abstract String serialize();
 
     //TODO shouldn't this method be a static factory ?
-    public abstract void Deserialize(String serialization);
+    public abstract void deserialize(String serialization);
 
     protected abstract void generateSystem(int keyLength) throws Exception;
     //</editor-fold>
     
     //<editor-fold defaultstate="collapsed" desc="Constructors">
-    /*public AbstractChaoticSystem() {
-        this.systemId = java.util.UUID.randomUUID().toString();
-        this.keyLength = 128;
-    }*/
-    
+
     public AbstractChaoticSystem(int keyLength) throws Exception {
         this(keyLength, java.util.UUID.randomUUID().toString());
     }
