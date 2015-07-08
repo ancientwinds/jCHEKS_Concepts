@@ -1,6 +1,7 @@
 package com.archosResearch.jCHEKS.concept.chaoticSystem;
 
 import com.archosResearch.jCHEKS.concept.exception.ChaoticSystemException;
+import java.util.Random;
 
 /**
  *
@@ -29,7 +30,7 @@ public abstract class AbstractChaoticSystem {
     //TODO shouldn't this method be a static factory ?
     public abstract void deserialize(String serialization);
 
-    protected abstract void generateSystem(int keyLength) throws ChaoticSystemException;
+    protected abstract void generateSystem(int keyLength, Random random) throws ChaoticSystemException;
     //</editor-fold>
 
     //TODO we should probably have a constructor with parameters (id and keylenght)
