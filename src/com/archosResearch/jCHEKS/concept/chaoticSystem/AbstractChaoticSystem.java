@@ -33,8 +33,6 @@ public abstract class AbstractChaoticSystem {
     protected abstract void generateSystem(int keyLength, Random random) throws ChaoticSystemException;
     //</editor-fold>
 
-    //TODO we should probably have a constructor with parameters (id and keylenght)
-    
     //<editor-fold defaultstate="collapsed" desc="Constructors">
     /*public AbstractChaoticSystem() {
         this.systemId = java.util.UUID.randomUUID().toString();
