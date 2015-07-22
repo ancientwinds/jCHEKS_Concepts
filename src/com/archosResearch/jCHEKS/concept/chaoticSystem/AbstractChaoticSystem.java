@@ -12,7 +12,6 @@ public abstract class AbstractChaoticSystem {
     //<editor-fold defaultstate="collapsed" desc="Properties">
     protected String systemId;
     protected int keyLength;
-    protected final int maxImpact = 32;
     protected byte[] lastGeneratedKey;
     //</editor-fold>
 
@@ -26,6 +25,8 @@ public abstract class AbstractChaoticSystem {
     public abstract AbstractChaoticSystem cloneSystem()  throws ChaoticSystemException;
 
     public abstract String serialize();
+    
+    public abstract int getAgentsCount();
 
     //TODO shouldn't this method be a static factory ?
     public abstract void deserialize(String serialization);
@@ -66,9 +67,6 @@ public abstract class AbstractChaoticSystem {
         return this.systemId;
     }
 
-    public int getImpact() {
-        return this.maxImpact;
-    }
     //</editor-fold>
 
 }
