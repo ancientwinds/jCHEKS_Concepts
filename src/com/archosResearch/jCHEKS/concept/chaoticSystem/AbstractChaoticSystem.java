@@ -1,13 +1,14 @@
 package com.archosResearch.jCHEKS.concept.chaoticSystem;
 
 import com.archosResearch.jCHEKS.concept.exception.ChaoticSystemException;
+import java.io.Serializable;
 import java.util.Random;
 
 /**
  *
  * @author jean-francois
  */
-public abstract class AbstractChaoticSystem {
+public abstract class AbstractChaoticSystem implements Serializable{
 
     //<editor-fold defaultstate="collapsed" desc="Properties">
     protected String systemId;
