@@ -28,6 +28,8 @@ public abstract class AbstractChaoticSystem implements Serializable{
     public abstract String serialize();
     
     public abstract int getAgentsCount();
+    
+    public abstract boolean isSameState(AbstractChaoticSystem system);
 
     //TODO shouldn't this method be a static factory ?
     public abstract void deserialize(String serialization);
