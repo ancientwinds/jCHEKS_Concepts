@@ -17,7 +17,7 @@ public abstract class AbstractChaoticSystem implements Serializable{
     //</editor-fold>
 
     //<editor-fold defaultstate="collapsed" desc="Abstract methods">
-    public abstract void evolveSystem(int factor) throws ChaoticSystemException;
+    public abstract void evolveSystem(int factor);
 
     public abstract byte[] getKey(int requiredLength)  throws ChaoticSystemException;
 
@@ -56,7 +56,7 @@ public abstract class AbstractChaoticSystem implements Serializable{
     //</editor-fold>
 
     //<editor-fold defaultstate="collapsed" desc="Methods">
-    public byte[] getKey() {
+    public byte[] getKey() throws ChaoticSystemException {
         return this.lastGeneratedKey;
     }
 
