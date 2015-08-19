@@ -60,7 +60,7 @@ public abstract class AbstractChaoticSystem implements Serializable{
         return this.lastGeneratedKey;
     }
 
-    public void evolveSystem() throws Exception{
+    public void evolveSystem() {
         this.evolveSystem(0);
     }
 

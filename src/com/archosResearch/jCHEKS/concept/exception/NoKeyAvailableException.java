@@ -1,4 +1,4 @@
-package com.archosResearch.jCHEKS.chaoticSystem.exception;
+package com.archosResearch.jCHEKS.concept.exception;
 
 import com.archosResearch.jCHEKS.concept.exception.ChaoticSystemException;
 
